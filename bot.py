@@ -40,7 +40,7 @@ def main():
     dp.add_handler(CommandHandler("NedenGtu", nedenGtu))
     dp.add_handler(CommandHandler("ArastirmaOlanaklari", arastirmaOlanaklari))
     dp.add_handler(CommandHandler("MuhendisNedir", muhendisNedir))
-    dp.add_handler(CommandHandler("BilgisayarMuhendisi", bilgisayarMuhendisi))
+    dp.add_handler(CommandHandler("MalzemeMuhendisi", malzemeMuhendisi))
     
     dp.add_handler(CommandHandler("KimlerBMOlabilir", kimlerBMOlabilir))
     dp.add_handler(CommandHandler("EgitimSureci", egitimSureci))
@@ -91,7 +91,7 @@ def main():
     # Start the Bot
     PORT = int(os.environ.get('PORT', '8443')) 
     updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN) 
-    updater.bot.set_webhook("https://gtu-bilmuh-bot-2020.herokuapp.com/" + TOKEN) 
+    updater.bot.set_webhook("https://gtumalzeme.herokuapp.com/" + TOKEN) 
     updater.idle()
 
     # Start the Bot
@@ -103,7 +103,7 @@ def start(bot, update):
         "Gebze Teknik Universitesi Bilgisayar Muhendisligi Botuna Hos Geldiniz.\
         \n /NedenGtu - Neden GTU Secmeliyim?\
         \n /MuhendisNedir - Mühendis Nedir?\
-        \n /BilgisayarMuhendisi - Bilgisayar Mühendisi Nedir?\
+        \n /MalzemeMuhendisi - Malzeme Mühendisi Nedir?\
         \n /KimlerBMOlabilir - Kimler Bilgisayar Mühendisi Olabilir?\
         \n /EgitimSureci - Eğitim Süreci\
         \n /CalismaOrtami - Çalışma ve İş Ortamları\
@@ -139,7 +139,7 @@ def start(bot, update):
         \n /Siralama - Yusuf Hoca'nın sıralama ile ilgili tahmin aralığı\
         \n /KacYildaMezun - Bilgisayar Mühendisliğinin meşhur zorluğu ile ilgili hocalarımızdan son senelerde ki pozitif değişme hakkında \
         \n /GrupKurallari - Grubumuzun ufak kuralları \
-        \n Adayları Bilgilendirme Grubu - https://t.me/GTU_CSE_2020")
+        \n Adayları Bilgilendirme Grubu - https://t.me/GtuMalzemeMuhBot")
  
 def welcome(bot, update):
     for new_user_obj in update.message.new_chat_members:
@@ -150,7 +150,7 @@ def welcome(bot, update):
         except Exception as e:
             new_user = new_user_obj['first_name'];
 
-        WELCOME_MESSAGE = "Merhaba " + str(new_user) + ", Gebze Teknik Universitesi Bilgisayar Muhendisligi Grubuna Hos Geldin! Bize kendini tanitmak ister misin? Seni tanimaktan memnuniyet duyariz 🙂. Ayrica merak ettigin konularda bilgi almak icin botumuzu 🤖 buradan @GTUBilMuh2020Bot ziyaret edebilirsin veya  telefonla aranıp birebir iletişime geçilmesini istiyorsan bit.ly/gebzetanıtım sitesinden bilgilerini girebilirsin."
+        WELCOME_MESSAGE = "Merhaba " + str(new_user) + ", Gebze Teknik Universitesi Malzeme Muhendisligi Grubuna Hos Geldin! Bize kendini tanitmak ister misin? Seni tanimaktan memnuniyet duyariz 🙂. Ayrica merak ettigin konularda bilgi almak icin botumuzu 🤖 buradan @GtuMalzemeMuhBot ziyaret edebilirsin."
 
         bot.sendMessage(chat_id=chat_id, text=WELCOME_MESSAGE)
 
@@ -196,7 +196,7 @@ def muhendisNedir(bot, update):
     
     update.message.reply_text('Mühendis; karmaşık yapıları, makineleri, ürünleri ve sistemleri tasarlayan, üreten ve test eden kişidir. Sistemlerin en verimli şekilde hizmet etmesi için gereksinimleri göz önüne alarak yeni yöntemler geliştirir.')
 
-def bilgisayarMuhendisi(bot, update):
+def malzemeMuhendisi(bot, update):
     
     update.message.reply_text('Bilgisayar Mühendisliği bilgisayar bilimleri ve elektronik-elektronik mühendisliği gibi birçok alanı birleştiren bir disiplindir. Bilgisayar Mühendisi çeşitli problemlere çözüm sağlamak amacı ile bilgisayardonanımı ve yazılımı içeren bilgi sistemlerinin analiz, tasarım, test ve geliştirme süreci ile ilgilenir.')
 
