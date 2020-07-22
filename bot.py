@@ -42,11 +42,10 @@ def main():
     dp.add_handler(CommandHandler("MuhendisNedir", muhendisNedir))
     dp.add_handler(CommandHandler("MalzemeMuhendisi", malzemeMuhendisi))
     
-    dp.add_handler(CommandHandler("KimlerBMOlabilir", kimlerBMOlabilir))
+    dp.add_handler(CommandHandler("KimlerMMOlabilir", kimlerMMOlabilir))
     dp.add_handler(CommandHandler("EgitimSureci", egitimSureci))
     dp.add_handler(CommandHandler("CalismaOrtami", calismaOrtami))
-    dp.add_handler(CommandHandler("BMIsImkanlari", isImkanlari))
-    dp.add_handler(CommandHandler("GorevTanimlari", gorevTanimlari))
+    dp.add_handler(CommandHandler("MMIsImkanlari", isImkanlari))
 
     dp.add_handler(CommandHandler("EgitimKadrosu", egitimKadrosu))
     dp.add_handler(CommandHandler("Lablar", lablar))
@@ -62,11 +61,9 @@ def main():
     dp.add_handler(CommandHandler("CiftveYanDal", ciftveYanDal))
     dp.add_handler(CommandHandler("EgitimDili", egitimDili))
     dp.add_handler(CommandHandler("Akreditasyon", Akreditasyon))
-    dp.add_handler(CommandHandler("YurtDisi", YurtDisi))
+    dp.add_handler(CommandHandler("MetalurjiMalzeme", MetalurjiMalzeme))
     dp.add_handler(CommandHandler("KykYurt", KykYurt))
-    dp.add_handler(CommandHandler("YapayZeka", YapayZeka))
     dp.add_handler(CommandHandler("YatayGecis", YatayGecis))
-    dp.add_handler(CommandHandler("NasilBilgisayar", NasilBilgisayar))
     dp.add_handler(CommandHandler("HangiDiller", HangiDiller))
     dp.add_handler(CommandHandler("Siralama", Siralama))
     dp.add_handler(CommandHandler("KacYildaMezun", KacYildaMezun))
@@ -74,8 +71,6 @@ def main():
 
 
 
-    dp.add_handler(CommandHandler("PuanYetmiyor",puanYetmiyor))
-    dp.add_handler(CommandHandler("UzmanlikAlanBelgesi", uzmanlikAlanBelgesi))
     dp.add_handler(CommandHandler("YokAtlas", yokAtlas))
     dp.add_handler(CommandHandler("GirisimciDestekleri", girisimciDestekleri))
     dp.add_handler(CommandHandler("IsBulmaOranlari", isBulmaOranlari))
@@ -100,15 +95,14 @@ def main():
    
 def start(bot, update):
     update.message.reply_text(
-        "Gebze Teknik Universitesi Bilgisayar Muhendisligi Botuna Hos Geldiniz.\
+        "Gebze Teknik Universitesi Malzeme Muhendisligi Botuna Hos Geldiniz.\
         \n /NedenGtu - Neden GTU Secmeliyim?\
         \n /MuhendisNedir - Mühendis Nedir?\
         \n /MalzemeMuhendisi - Malzeme Mühendisi Nedir?\
-        \n /KimlerBMOlabilir - Kimler Bilgisayar Mühendisi Olabilir?\
+        \n /KimlerMMOlabilir - Kimler Malzeme Mühendisi Olabilir?\
         \n /EgitimSureci - Eğitim Süreci\
         \n /CalismaOrtami - Çalışma ve İş Ortamları\
-        \n /BMIsImkanlari - İş İmkanları\
-        \n /GorevTanimlari - Görev ve İş Tanımları\
+        \n /MMIsImkanlari - İş İmkanları\
         \n /EgitimKadrosu - Eğitim Karosu\
         \n /Lablar - Araştıma Labratuarları\
         \n /ArastirmaOlanaklari - Araştırma Olanakları\
@@ -122,22 +116,18 @@ def start(bot, update):
         \n /Basarilar - Başarılarımız\
         \n /CiftveYanDal - Çift Dal ve Yan Dal Olanakları\
         \n /EgitimDili - Eğitim Dili\
-        \n /YurtDisi - Yurt Dışında Doktora yapan eski mezunumuzdan\
+        \n /MetalurjiMalzeme - Metalurji ve Malzeme arasındaki fark nedir? \
         \n /Akreditasyon - Akreditasyon ve GTÜ hakkında\
         \n /YatayGecis - Yatay Geçişle İlgili Sorular\
         \n /KykYurt - KYK ve Genel Olarak Barınma için sorulan sorular\
-        \n /YapayZeka - Yapay Zeka Nedir?\
-        \n /HangiDiller - Bilgisayar bilmeden gelebilir miyim ? Hangi Programlama dilleri lazım\
-        \n /NasilBilgisayar - Nasil Bilgisayar almalıyım ?\
-        \n /UzmanlikAlanBelgesi - Diplomanın yanında herhangi bir ek belge veriliyor mu?\
+        \n /HangiDiller - Hangi dilleri öğrenmeliyim \
         \n /YokAtlas - YÖK Atlas neden önceki yıllara ait başarı sıranızı göstermiyor? \
-        \n /PuanYetmiyor - Puanım yetmiyor , GTU istiyorum ne yapmalıyım ? \
         \n /GirisimciDestekleri - Üniversitenin girişimci desteği var mı? \
         \n /IsBulmaOranlari - Mezunlarınızın iş bulma oranları ve süreleri nelerdir?\
         \n /KampusFotolari - Kampüsümüzden görüntüler\
-        \n /HangiBolumuSecmeliyim - Bilgisayar Mühendisliğini mi seçmeliyim, XXXX Mühendisliğini mi seçmeliyim??\
-        \n /Siralama - Yusuf Hoca'nın sıralama ile ilgili tahmin aralığı\
-        \n /KacYildaMezun - Bilgisayar Mühendisliğinin meşhur zorluğu ile ilgili hocalarımızdan son senelerde ki pozitif değişme hakkında \
+        \n /HangiBolumuSecmeliyim - Malzeme Mühendisliğini mi seçmeliyim, XXXX Mühendisliğini mi seçmeliyim??\
+        \n /Siralama - sıralama ile ilgili tahmin aralığı\
+        \n /KacYildaMezun - Malzeme Mühendisliğinden mezun olma\
         \n /GrupKurallari - Grubumuzun ufak kuralları \
         \n Adayları Bilgilendirme Grubu - https://t.me/GtuMalzemeMuhBot")
  
@@ -154,43 +144,39 @@ def welcome(bot, update):
 
         bot.sendMessage(chat_id=chat_id, text=WELCOME_MESSAGE)
 
-def NasilBilgisayar(bot, update):
-    
-    update.message.reply_text('Bilgisayar mühendisliğinde lisans eğitiminde bitirme projeniz haricinde çok ağır işlemler yapılmamaktadır. Bilgisayarınızın çok güçlü olmasından çok hafif ve taşınabilir olması daha önemlidir. Ekran çözünürlüğünün gözünüzü ağrıtmaması gece ödev yaparken size fayda sağlayacaktır.\
-            i5 işlemcisi olan 8GB ram ve SSD(şart değil) içeren bir laptop işinizi görecektir.Ailelerinizi bu konuda ağır yük altına sokmamanız daha yararlı olacaktır çok güç gerektiren derin öğrenme ağları vb gibi işlemlerde okulun imkanlarını kullanabilirsiniz.')
 
 def nedenGtu(bot, update):
     
-    update.message.reply_text('GTU konumu itibari ile GOSB, TÜBİTAK Serbest Bölge, KOSGEB ve benzeri bir çok AR-GE Merkezi alanında bulunmaktadır. Bu durum staj, mezuniyet öncesi ve sonrası iş olanakları sağlamaktadır. İstanbul’a yakın olması nedeniyle İstanbul’da ikamet etme ve çalışma olanağı sağlamaktadır. Öğrencilere yaptırılan projelerle sadece teorik bilgide kalmayan bunun yanında saha tecrübesi kazandıran bir eğitim verilmektedir.')
+    update.message.reply_text('GTU konumu itibari ile GOSB, TÜBİTAK Serbest Bölge, KOSGEB ve benzeri bir çok AR-GE Merkezi alanında bulunmaktadır. Bu durum staj, mezuniyet öncesi ve sonrası iş olanakları sağlamaktadır. İstanbul’a yakın olması nedeniyle İstanbul’da ikamet etme ve çalışma olanağı sağlamaktadır. Öğrencilere yaptırılan projelerle sadece teorik bilgide kalmayan bunun yanında saha tecrübesi kazandıran bir eğitim verilmektedir. Bölümümüzdeki öğretim üyelerimiz kendi alanlarında yurtdışında saygın üniversitelerde doktora eğitimlerini tamamlamış ve önemli akademik başarılar edinmiştir. Aldıkları iyi eğitimi öğrencilere tüm çabalarıyla aktaran akademisyenlerimiz bir yandan da birçok ulusal ve uluslararası proje yürütmekte, bilimsel makalelerini yayınlamaktadır. Gebze Teknik Üniversitesinin Türkiye’nin en büyük sanayi bölgelerinden birinde bulunması ve sanayi kuruluşları ile birçok iş birliğine sahip olması özellikle mühendislik öğrencileri için gerek staj imkanları gerek üniversite sonrası iş hayatı için büyük bir avantajdır.')
 
 def Siralama(bot, update):
     
-    update.message.reply_text('Yusuf Sinan Akgül hocanın 2020 sıralama tahmini ile ilgili yazdığı yazı şöyledir \n https://t.me/GTU_CSE_2020/252')
+    update.message.reply_text('60k- 150k arasında bölümümüz tercih edilmektedir')
 
 def KacYildaMezun(bot, update):
     
-    update.message.reply_text('Bu arada geçen sen bölümümüzün ortalama mezuniyet süresi 5.6 yıldı. Buna göre gelen kadar mezun olan var ama bazıları geç mezun oluyor.Mezun olma süresi Bugünlerde durum daha iyi olabilir çünkü son 4-5 yıldır öğrencilerin bölüme sahip olma seviyeleri artmaya başladı. Ama sonuç olarak GTÜ içerisinde mezun olma süresi BMden daha uzun bölüm olduğunu sanmıyorum. Bu istenilen bir durum değil tabi ki ama bu rakamı düşük tutmak için ders kalitesinden taviz vermemiz mümkün değil.')
+    update.message.reply_text('Tahmini mezun olması süresi 5 yıldır. (Hazırlıkla beraber) ')
 
 def HangiDiller(bot, update):
     
-    update.message.reply_text('Bilgisayar Mühendisliği lisans eğitimi boyunca C,C++,Java,Python,LISP,C#,Assembly(Makine Dili) gibi programlama dilleri gösterilmektedir.Onceden bilgisayar hakkında bir bilgi sahibi olmanıza gerek yoktur derslerinize zamanıda calisirsaniz dersleri geçebilecek kadar bilgi almaktasınız.')
+    update.message.reply_text('İyi bir malzeme mühendisi İngilizce bilmelidir. Bunun dışında Almanca, Çince gibi dillere de yönelebilirler. ')
 
 def arastirmaOlanaklari(bot, update):
     
-    update.message.reply_text('Bilgisayar Mühendisliği bölümü olarak 11 adet laboratuvar ile araştırma çalışmalarını sürdürmekteyiz.\
-            \n Ağ ve Bilgi Güvenliği Laboratuvarı \
-            \n Bilgisayar Ağları Laboratuvarı \
-            \n Bilgisayarla Görme Laboratuvarı \
-            \n Çizge Teorisi ve Ağ Optimizasyonu Laboratuvarı \
-            \n İnsan Bilgisayar Etkileşimi Laboratuvarı \
-            \n Kablosuz Araştırma Laboratuvarı\
-            \n Robotik ve Kontrol Laboratuvarı \
-            \n Bilgisayar Ağları Laboratuvarı \
-            \n Simulasyon ve Savunma Teknolojileri Laboratuvarı \
-            \n Veri Madenciliği Laboratuvarı \
-            \n Yüksek Başarımlı Hesaplama Laboratuvarı \
-            \n Otonom Araç Laboratuvarı \
-            \n Çalışma alanlarımız hakkında detaylı bilgi alabilmek için  : http://www.gtu.edu.tr/kategori/109/0/display.aspx?languageId=1 ')
+    update.message.reply_text('Malzeme Mühendisliği bölümü olarak 29 adet laboratuvar ile araştırma çalışmalarını sürdürmekteyiz.\
+            \n İnce Film Üretim Laboratuvarı - I-II \
+            \n İnce Film Elektrik ve Optik Özellikler Ölçüm Laboratuvarı\
+            \n Metal Laboratuvarı - I-II-III \
+            \n Mühendislik Seramikleri ve Kompozitleri Araştırma Laboratuvarları \
+            \n TEM ve SEM labları \
+            \n X-Işını Kırınımı Laboratuvarı\
+            \n Polimer Karakterizasyonu Laboratuvarı-I-II \
+            \n Aygıt Tasarım, Benzetim, Üretim Ve Karakterizasyon Laboratuvarı \
+            \n Hidrojen Teknolojileri Araştırma Laboratuvarı \
+            \n Katı Oksit Yakıt Hücresi Araştırma Laboratuvarı \
+            \n Temiz Oda Ve İnce Film Sentez Laboratuvarı \
+            \n Metal Yüzeylerinin Modifikasyonu Laboratuvarı \
+            \n Çalışma alanlarımız hakkında detaylı bilgi alabilmek için  : http://www.gtu.edu.tr/kategori/367/0/display.aspx?languageId=1 ')
 
 def muhendisNedir(bot, update):
     
@@ -198,72 +184,43 @@ def muhendisNedir(bot, update):
 
 def malzemeMuhendisi(bot, update):
     
-    update.message.reply_text('Bilgisayar Mühendisliği bilgisayar bilimleri ve elektronik-elektronik mühendisliği gibi birçok alanı birleştiren bir disiplindir. Bilgisayar Mühendisi çeşitli problemlere çözüm sağlamak amacı ile bilgisayardonanımı ve yazılımı içeren bilgi sistemlerinin analiz, tasarım, test ve geliştirme süreci ile ilgilenir.')
+    update.message.reply_text('Malzeme Bilimi ve Mühendisi organik ve inorganik hammaddelerden metaller, seramikler,polimerler ve bunların karışımı olan kompozit malzemeleri hedefe ve amaca yönelik olarak tasarlayan ve üreten kişidir. Her devirde kullanılan teknoloji o devirdeki malzeme bilgisi ile sınırlı olacaktır. Bu nedenle malzeme bilimi ve mühendisleri her dönemde ihtiyaç duyulan kişiler olacaktır.')
 
-def kimlerBMOlabilir(bot, update):
+def kimlerMMOlabilir(bot, update):
     
-    update.message.reply_text('Analitik problem çözme yeteneğine sahip, problemi doğru ve verimli bir şekilde çözmeye istekli, problem çözmede sabırlı ve hırslı davranan, teknolojiye ilgisi olan kişiler bilgisayar mühendisi olabilirler.')
+    update.message.reply_text('Malzeme Bilimi ve Mühendisi, endüstrinin, teknolojinin ve geleceğin ihtiyaç duyduğu malzemelerin tasarımını yapar. Çok geniş bir alana hakim olan bu mühendislik dalı diğer bütün mühendislik işlerinin yürütülebilmesi için en temel noktada bulunmaktadır. Örneğin bilgisayar teknolojisine yönelik ihtiyacı bilgisayar mühendisi belirliyor ve buna yönelik elektronik tasarımı elektrik-elektronik mühendisi yapıyorken, bu uygulamada kullanılacak malzemenin seçimini, tasarımını ve üretim yöntemini belirlemek malzeme bilimi ve mühendisinin işidir.')
 
 def egitimSureci(bot, update):
     
-    update.message.reply_text('Öğrencilere temel mühendislik disiplinleri olan programlama dilleri, bilgisayar mimarisi ve donanımı, veri yapıları, algoritmalar, işletim sistemleri, iletişim ağları ve kuramsal temellerin yanı sıra bilgisayar mühendisliği alanlarında özelleşmelerini sağlayan dersler verilmektedir.\
-        \n GTU Bilgisayar Mühendisliği Bölümü, öğrencilerine üç farklı alandan birinde uzmanlaşma imkânı sunmaktadır.Öğrencilerin bir alanda uzmanlaşmaları profesyonel kariyerlerinde (özellikle iş hayatına atacakları ilk adımda) daha başarılı olmalarına yardımcı olacaktır. Öğrenciler aşağıdaki alanlardan ilgilerine göre bir tanesi seçerek başarıyla bitirdikleri takdirde ‘Uzmanlık Alanı Sertifikası’ almaya hak kazanacaklardır.\
+    update.message.reply_text('Program, öğrencilerine temel Malzeme Bilimi ve Mühendisliği bilgisi ile malzeme tasarım ve özellikleri ile ilgili veriyi analiz edip yorumlayacak, deneyleri tasarlayıp yürütecek, malzeme karakteristik ve özellikleri ile ilgili mühendislik problemlerini tanımlayıp, formüle edecek yetileri kazandırmayı; gerek mühendislik mesleğini icra edebilecek gerekse üst derece programlarına geçiş yapabilecek mezunlar yetiştirmeyi amaçlamaktadır.\
         \n Detaylar için aşağıdaki sayfaları ziyaret edebilirsiniz. \
-        \n Uzmanlık alan dersleri icin http://www.gyte.edu.tr/Files/UserFiles/85/kaynaklar/alandersleri.pdf ulaşabilirsiniz. \
-        \n Tum dersler icin http://www.gtu.edu.tr/%20http:/anibal.gyte.edu.tr/ects/?dil=tr&amp;duzey=ucuncu&amp;modul=lisans_derskatalogu&amp;bolum=104&amp;tip=lisans ')
+        \n Uzmanlık alan dersleri icin http://abl.gtu.edu.tr/ects/?duzey=ucuncu&modul=lisans_derskatalogu&bolum=101&tip=lisans \
+        \n Tum dersler icin http://abl.gtu.edu.tr/ects/?duzey=ucuncu&menu=lisans_ogretimprogrami&bolum=101&tip=lisans ')
 
 
 def calismaOrtami(bot, update):
     
-    update.message.reply_text('Bilgisayar Mühendislerinin tek bir alanda çalıştığını söylemek zordur. Çünkü Bilgisayar mühendisleri yönetim, endüstri ve hizmet alanlarında değişik görevler üstlenebilirler. Günümüzde birçok meslek gibi; bilgisayar mühendisleri, genellikle yazılım ve donanım mühendisi olarak ofislerde ve araştırma-geliştirme laboratuvarlarda çalışmaktadırlar. Genellikle sessiz bir ortamda çalışmaktadırlar. Pazarlama alanında çalışanlar beraber çalıştıkları diğer ortamlarla etkileşim halinde olup daha sosyal bir iş ortamına sahiptirler. İş analistleri ise sahada gözlemler yapar. Akademisyenliği tercih eden bilgisayar mühendisleri bunlara ek olarak dersliklerde de görev yapabilmektedirler. Bilgisayar mühendisi çalışırken diğer meslektaşlarıyla ve iş sahipleriyle etkileşim halindedir.')
+    update.message.reply_text('Malzeme bilimi ve mühendisliği geniş bir alanda iş imkanına sahip olduğu için tek bir tanım söz konusu değildir. Bir demir-çelik firmasında yüksek sıcaklık şartları mevcutken, satış mühendisleri genel olarak ofiste çalışmaktadır. Kalite kontrol mühendisleri firmaların laboratuvarlarında çalışırken, üretim mühendisleri üretimin yapıldığı sahalarda çalışmaktadır.')
 
 def isImkanlari(bot, update):
     
-    update.message.reply_text('Bilişim teknolojileri hızla gelişmekte ve günümüzde sağlık, eğitim, haberleşme, savunma, eğlence ve bankacılık gibi birçok alanda önemli bir yere sahip olmaktadır. Bu nedenle Bilgisayar Mühendisliği bölümü birçok alanda iş bulma kolaylığı sunmaktadır. Çalışanlarının büyük bir bölümü bilgisayar mühendislerinden oluşan ve temel işi mühendislik olan yazılım şirketlerinde, farklı alanlarda çalışan birçok şirketin bilişim bölümlerinde, devlet bünyesinde proje odaklı çalışan araştırma-geliştirme bölümlerinde, kamu sektöründe ve üniversitelerde bilgisayar mühendisliği bilgisayar mühendisi istihdam edilmektedir. Bilgisayar mühendisleri birçok mesleğe kıyasla yüksek rağbet görmektedirler ve yüksek ücretler alırlar. Buna bağlı olarak iş değiştirme oranları bilgisayar mühendislerinde yüksek seviyelerdedir ve işsiz kalma süreleri oldukça azdır. Özellikle devletin de desteklediği bir çok kobi projesiyle ile kendi girişimlerini kurabilme şansları da bilgisayar mühendislerinin yüksek kazanç elde edebilmelerine olanak sağlamaktadır.')
+    update.message.reply_text('Malzeme bilimi temel olarak 4 ana grupta toplanmaktadır. Bunlar metaller, seramikler, polimerler ve kompozitlerdir. Malzeme Bilimi ve Mühendisi bu malzeme gruplarını içeren bütün noktalarda görev alabilmektedir. Örneğin, çelik parçalar üreten bir demir-çelik fabrikasında üretim mühendisi olarak çalışabileceği gibi pet şişe üreten bir plastik fabrikasında da çalışabilmektedir. Yer karosu üreten bir seramik fabrikasında çalışabileceği gibi cam malzemeler üreten bir kurumda da çalışabilmektedir. Malzeme Bilimi ve Mühendisi sadece üretim noktasında değil öncesi ve sonrasında da çok önemli görevler almaktadır. Bir firmanın yapacağı satın alımlar için malzemeyi bilen kişi olarak satın alma mühendisliği sık çalışılan pozisyonlardan biridir. Bunun yanında üretim sürecinde üretilen malzemelerin belirli kalite standartlarına uyup uymadığını kontrol eden kalite mühendisi pozisyonu da en önemli iş alanlarından biri durumundadır. Kalite mühendisliği pozisyonunda malzeme bilimi ve mühendisine talep olan sektörlerden biri otomotiv sektörüdür. Üretim sonrası çalışma pozisyonu olarak ise üretilen malzemeleri bilen ve bu nedenle satışını yapan satış mühendisi olarak da birçok pozisyon bulunmaktadır. Malzeme Bilimi ve Mühendisi, malzeme tasarlama, üretim yöntemlerini ve malzeme özelliklerini geliştirebilme yeteneklerine sahip olan kişidir. Bu nedenle en önemli iş alanlardan birisi Ar-Ge (Araştırma Geliştirme) ve Ür-Ge (Ürün Geliştirme) pozisyonlarıdır. Ar- Ge mühendisleri çoğunlukla firmaların laboratuvarlarında faaliyet göstermektedir.')
 
 def KykYurt(bot, update):
     
     update.message.reply_text('Kyk yurduna çıkma ihtimali zor mudur? = Değildir KYK yurtlarında yer bulunmaktadır 3 kişilik odalara getirildi kontenjan artırılması için. Kyk Yurtları dışında Şifa mahallesi öğrencie evleri 2+1/3+1 650-750 lira arasındadır.\
             KYK yurdundan devlet otobüsyle ulaşım 45 dakika sürmekte ve aylık 70-80 lira tutmaktadır. Özel servis ile ulaşım 15 dakika sürmekte ve ücreti 150-160 lira arası değişmektedir.')
-def YapayZeka(bot, update):
-    
-    update.message.reply_text('Yapay Zeka nedir? Yapay zekâ, bir bilgisayarın veya bilgisayar kontrolündeki bir robotun çeşitli faaliyetleri zeki canlılara benzer şekilde yerine getirme kabiliyeti.İngilizce artificial intelligence kavramının akronimi olan AI sözcüğü de bilişimde sıklıkla kullanılır. Yapay zekâ çalışmaları genellikle insanın düşünme yöntemlerini analiz ederek bunların benzeri yapay yönergeleri geliştirmeye yöneliktir.\
-        Okulumuzda neredeyse tüm hocalarımız yapay zekanın bir alanında çalışma yapmış ve yapmaya devam etmektedirler.Çalışma konuları arasında Makine Zekası,Yapay Sinir Ağları,Doğal Dil İşleme,\
-        Konuşma Sentezi,Uzman Sistemler,Örüntü Tanıma,Genetik Algoritmalar,Bulanık Mantık,Pekiştirmeli Öğrenme gibi alanlar bulunmaktadır.Çalışma alanlarıyla ilgili detaylı video için \
-            https://www.youtube.com/watch?v=ZJixNvx9BAc izleyebilirsiniz')
 
-def gorevTanimlari(bot, update):
-    
-    update.message.reply_text('Sistem Çözümleyici: Bilgi işlem sistemlerini kuran ve yeni bilgi toplayan, sistemlerin kurulmaları ve çalışmaları için gerekli yöntemleri tanımlayan, kurulumlarını yapan, denetleyen ve gelişmeleri için önerilerde bulunan nitelikli kişidir. \
-        \n*Sistem Programcısı*: Bilgisayarın sistem yazılımını tasarlayan, programlayan ve bakımını yapan, yapımcı firma tarafından verilen yazılımı inceleyerek gerekli optimum yapıyı kararlaştıran, yapımcının yazılımda yaptığı değişiklikleri inceleyerek mevcut işletim sistemleri, sistem tasarımı, programlama ve işletme yöntemlerine etkilerini belirleyen, yeni yada değiştirilmiş yazılımları kurmadan önce deneyerek sistem yazılımının kullanımı ve uygulama programlarına bağlantısı konularında sistem çözümleyicilere ve programcılara yol gösteren kişidir. \
-        \nUygulama Programcısı: Programın mantığını tasarlayan, deneyen ve hazır hale getirerek bilgiyi işlemek için gerekli olan program akış şemalarını ve alt programları hazırlayan, dizi ve kütük gereksinimlerinin belirlenmesi için sistem tasarımcısına yardımcı olan, programlama standartlarına göre tamamlanmış olan programların işlemesini ve diğer programlara bağlantısını deneyen nitelikli kişidir.  \
-        \nVeri Tabanı Yöneticisi: Bir veri tabanı yöneticisi mantıksal data modelleme, fiziksel veritabanı dizaynı çıkarma, fiziksel olarak veritabanı oluşturma, güvenlik yönetimi ve konfigürasyonu, veritabanı yönetimi ve bakımı, veritabanı denetleme ve optimize etme işlerini üstlenir.\
-        \nVeri İletişim Uzmanı: Veri madenciliği ile ilgilenen, büyük verilerin daha efektif nasıl kullanılabileceği sorusuna çözümler geliştiren ve bunları raporlayan uzmanlardır.\
-        \nBilgi İşlem Yöneticisi: Çalışanlar için gereken yazılım, donanım ve network araçlarının oluşturulması, kurulumu, yönetimi ve bakımı gibi işler ile ilgilenir.\
-        \nEğitmen: Üniversitelerde yeni bilgisayar mühendislerinin yetişmesi için çalışırlar.\
-        \nDanışman: Şirketlere bilişim teknolojileri ile ilgili gerekli konularda danışmanlık yaparlar.\
-        \nBilgisayar Donanımı Tasarımcısı: Bilgisayarların fiziksel parçalarının tasarlanmasında ve geliştirilmesinde görev alırlar.\
-        \nBilgisayar Donanımı Tasarımcısı: Bilgisayarların fiziksel parçalarının tasarlanmasında ve geliştirilmesinde görev alırlar.')
 
 def egitimKadrosu(bot, update):
     
-    update.message.reply_text('Yurtdışında eğitim almış ve farklı ekollerden gelen öğretim üyelerine sahiptir. http://www.gtu.edu.tr/kategori/98/12/display.aspx?languageId=1 linkinde detaylı bir şekilde öğretim üyelerine ait bilgiler verilmektedir.')
+    update.message.reply_text('Yurtdışında eğitim almış ve farklı ekollerden gelen öğretim üyelerine sahiptir. http://www.gtu.edu.tr/kategori/353/12/display.aspx?languageId=1 linkinde detaylı bir şekilde öğretim üyelerine ait bilgiler verilmektedir.')
 
 
 def lablar(bot, update):
     
-    update.message.reply_text('GTÜ Bilgisayar Bölümü bünyesinde 10 farklı alanda araştırmaların yürütüldüğü araştırma laboratuvarları bulunmaktadır.\
-    \nAğ ve Bilgi Güvenliği Laboratuvarı \
-    \nBilgisayar Ağları Laboratuvarı \
-    \nBilgisayarla Görme Laboratuvarı \
-    \nÇizge Teorisi ve Ağ Optimizasyonu Laboratuvarı \
-    \nİnsan Bilgisayar Etkileşimi Laboratuvarı \
-    \nKablosuz Araştırma Laboratuvarı \
-    \nRobotik ve Kontrol Laboratuvarı \
-    \nSimülasyon ve Savunma Teknolojileri Laboratuvarı \
-    \nVeri Madenciliği Laboratuvarı \
-    \nYüksek Başarımlı Hesaplama Laboratuvarı\
-    \nAyrıntılı bilgi için http://www.gyte.edu.tr/icerik/109/670/laboratuvarlar.aspx')
+    update.message.reply_text('Malzeme Bölümü bünyesinde 29 farklı alanda araştırmaların yürütüldüğü araştırma laboratuvarları bulunmaktadır.Bölümümüz laboratuvarlar açısından hem kendi bölgesinde hem de Türkiye genelindeki en iyi imkanlardan birine sahiptir. Bu laboratuvarlar hem çeşitli destekler hem de akademisyenlerimizin hazırladığı projeler sayesinde oldukça donanımlıdır. \
+   \nAyrıntılı bilgi için http://www.gtu.edu.tr/kategori/367/0/display.aspx?languageId=1')
 
 
 def burs(bot, update):
@@ -297,7 +254,7 @@ Bunun yanında Erasmus stajı denen bir ayrı durum daha var burada da belirli b
 
 def ogrenciykenCalisma(bot, update):
     
-    update.message.reply_text('GTU Bilgisayar Mühendisliği İstanbul-Kocaeli il sınırında bulunan bir üniversite olduğu için hem İstanbul hem de Kocaeli ilinde bulunan şirketlere yakınlığı nedeniyle özellikle 3.sınıftan sonra üniversite de öğrenilen bilgileri iş hayatında uygulamaya koymak isteyen öğrencilere avantaj sağlamaktadır. Öğrenciler için ders programında boş gün ve saatler ayarlanarak kısa zamanlı çalışmak isteyen öğrencilere kolaylıklar sunulmaktadır. Ayrıca bölümün dış destekli araştırma projelerinde öğrencilere çalışma fırsatları verilmektedir.')
+    update.message.reply_text('GTU İstanbul-Kocaeli il sınırında bulunan bir üniversite olduğu için hem İstanbul hem de Kocaeli ilinde bulunan şirketlere yakınlığı nedeniyle özellikle 3.sınıftan sonra üniversite de öğrenilen bilgileri iş hayatında uygulamaya koymak isteyen öğrencilere avantaj sağlamaktadır. Bu kapsamda bölümümüz TAİ, TEİ gibi firmalarda ücretli uzun dönem staj yapabilmektedirler. Öğrenciler için ders programında boş gün ve saatler ayarlanarak kısa zamanlı çalışmak isteyen öğrencilere kolaylıklar sunulmaktadır. Ayrıca bölümün dış destekli araştırma projelerinde öğrencilere çalışma fırsatları verilmektedir. Aynı zamanda hocalarımız lisans seviyesindeki öğrencileri projelerinde uygun pozisyonlara alıp onların teorik bilgilerini bir yandan da pratik olarak uygulamalarını sağlamakta, gelecek yıllar için bilimsel çalışma pratiğini kazandırmaktadır. ')
 
 def kulupler(bot, update):
     
@@ -310,15 +267,10 @@ def basarilar(bot, update):
     
     update.message.reply_text('Basarilarimi gormek icin: http://www.gtu.edu.tr/icerik/8/4200/display.aspx?languageId=1')
 
-def YurtDisi(bot, update):
+def MetalurjiMalzeme(bot, update):
     
-    update.message.reply_text('Merhaba, ben Şeyma Yucer. GTU 2015 lisans, 2018 yüksek lisans mezunuyum. Şuan Kuzey İngilterede bulunan Durham Üniversitesinde doktora yapıyorum. Geçen yıl akreditasyonla ilgili çok fazla soru sorulduğu için kendi doktora başvuru sürecimden bahsedip, soruların akademik olan kısmına cevap vermek istiyorum. 2019 başında, İngiltere başta olmak üzere, Güney Kore, Finlandiya, Almanya gibi farklı ülkelere doktora başvurusu yaptım. Aranan şeylerin ortak olanları: IELTS, iyi bir ortalama (min. 3.00), mezuniyet derecesi, yaptığın projeler, bu projelerden çıkan yayınlar, bunları anlatabiliyor olman, mülakatlarda sorulan veri yapıları ve lineer cebir sorularına yaklaşımın ve yanıtlarını nasıl kodladığın idi. Ancak hiçbir başvurumda akreditasyon sorulmadı, başvurularımı ilerlettiğim, belgelerini tamamladığım Güney Koredeki üniversiteö ailemle ilgili nüfus kayıt noter tasdikli çeviri bile istedi ama akreditasyon istemedi. Okulun size sağlayacağı en önemli belge, İngilizce mezuniyet belgesi ve sınıf sıralama belgesi. Sıralama veriliyor lisans için, mezuniyet de İngilizce-Türkçe beraber zaten. Başvuru zamanı geldiğinde akreditasyonun sorun olmayacağını, İngilizce, not ortalaması ve veri yapılarının çok daha fazla önemli olduğunu bir kez daha adaylara belirtmek isterim')
+    update.message.reply_text('Metalurji, malzeme biliminin içerisinde bulunan metaller dalına verilen addır ve metal bilimi anlamına gelmektedir. Malzeme bilimi bütün malzeme gruplarını ve dolayısıyla metalurjiyi de kapsamaktadır. Ülkemizde birçok demir-çelik firması bulunmaktadır ve bazı okullar bu nedenle metalurji mühendisliği adını kullanmaktadır. Dünya genelinde ise bu meslek “Malzeme Bilimi ve Mühendisliği” olarak tanımlanmıştır. Ülkemiz şartlarında, "metalurji  ve malzeme mühendisleri" ile "malzeme bilimi ve mühendisleri", hem devlette hem de özel sektörde aynı hak, şart ve vasıflarda çalışabilmektedir.')
 
-def puanYetmiyor(bot,update):
-
-    update.message.reply_text('GTU Bilgisayar Mühendisliğine puanım yetmiyor, üzülmeli miyim? \
-             \n Arkadaşlar, GTÜ BM olarak iyi bir lisans eğitimi verdiğimize inanıyoruz, bizim programımızı bilen ve isteyen adayların tabi ki bizde öğrenci olmasını isteriz ancak alabileceğimiz öğrenci sayısı belli, aşmamız mümkün değil. Eğer puanınız bu bölüm için yetmiyorsa, üzülmeyin, \
-             \n Türkiyede çok sayıda BM bölümü mevcut, araştırın, sizin istediğinize en uygun bölümü bulun ve ondan sonra yapacağınız tek şey derslerinize dikkat etmek, sürekli olarak başka kaynaklardan BMnin temelleri ve yeni gelişen teknolojileri hakkında bilgi edinmek olsun. Bunu yaparsanız, sizin ne GTÜ BMye ne de MIT CSe ihtiyacınız var, zaten iyi bir mühendis olacaksınız. Bir bölüm sizin iyi bir mühendis olmanız için bir araçtır, bölümlere kabul edilmeyi amaç olarak almayın kendinize. Ülkemizde uygulanan üniversite öğrenci seçme sistemi maalesef çok başarılı değil, sınav hazırlık süreci çok uzun ve hazırlık sürecinden elde edilen birikimlerin sonradan işe yaraması beklenmiyor. Bu sınav sonucunu kendinize sınır çekmek için kullanmayın, kendinizi diğer adaylardan daha az puan aldığınız için yetersiz görmeyin aynı şekilde yüksek puan almanız da diğerlerinden farklı olduğunuzu göstermez. Bu sınav bir üniversiteye yerleşmek için bir aşamadır. Esas çalışma, kendinizi yetiştirme, geliştirme bu aşamadan sonra başlar. GTÜ BMnin diğer üniversitelerden farklı yaptığı tek şey belki biraz fazla ödev ve proje verip, bunların yapıldığından emin olmaya çalışmasıdır. Aynı disiplini kendiniz başka üniversitelerde uygulamamanız için bir neden yok. Defalarca söylediğim gibi iş sizde bitiyor, iyi bir mühendis olmak için bölüm sadece yardımcı bir araçtır ama tek başına sizi iyi bir mühendis yapmaz. Gayret eden, sürekli araştıran ve ileride kalan birisi için hangi bölümde okuduğun çok bir önemi yoktur.')
 
 def ciftveYanDal(bot, update):
     
@@ -326,7 +278,7 @@ def ciftveYanDal(bot, update):
 
 def egitimDili(bot, update):
     
-    update.message.reply_text('Bilgisayar Mühendisliğinde eğitim dili %100 İngilizcedir. Öğrenciler eğitime başlamadan önce 1 yıl İngilizce hazırlık kursu görmektedirler. İngilizceleri yeterli olan öğrenciler kursa başlamadan önce İngilizce hazırlık geçiş sınavına girerek, bu kurstan muaf olarak eğitime başlama hakkına sahiptir.')
+    update.message.reply_text('Malzeme Mühendisliğinde eğitim dili en az %30 İngilizcedir. Öğrenciler eğitime başlamadan önce 1 yıl İngilizce hazırlık kursu görmektedirler. İngilizceleri yeterli olan öğrenciler kursa başlamadan önce İngilizce hazırlık geçiş sınavına girerek, bu kurstan muaf olarak eğitime başlama hakkına sahiptir.')
 
 def Akreditasyon(bot, update):
     
@@ -341,9 +293,6 @@ def YatayGecis(bot, update):
     \n Ayrıca öğrenciler çok rahat bir biçimde 3. ve 4. sınıfta okurken çalışabilecekleri gibi, mezun olur olmaz rahatlıkla iş bulabiliyorlar. Kötü yanları peki? -Gerçekten vaktinizin çoğunu okul alacak, bunu göze almalısınız. Ben çok hafta biliyorum, 4 ödev teslim ettiğim oldu bu da neredeyse hiçbir günün bana kalmaması anlamına geliyordu. Ayrıca okulun Gebze’de olması da bir dezavantaj olarak görülebilir ancak şanslısınız ki Marmaray açıldı :) . Nasıl Girebiliriz - \
     \n Arkadaşlar yatay geçiş her üniversiteden yapılabilir fakat 2 çeşit yatay geçiş var biri önceki seneler puanı tuttuğu halde yazmayıp sonradan geçmeyi düşünenler için(merkezi yatay geçiş) diğeri ortalama ile yatay geçiş bunun içinde belli bir ortalamanın üstünde olup başvuruyorsunuz tabi başka kriterlere de bakılabilir o dönem başvuranlar arasında listeye alınıyorsunuz eğer şartları(yaptığınız GNO,girdiğiniz sene ki sınav puanı gibi katmanların belli katsayılarla çarpılıp size puan çıkarılması) sağlarsanız ve kontenjana girerseniz geçebilirsiniz . Tüm üniversitelerde böyle bu olay , ders denklik olayı ayrı bir olay tabi')
 
-def uzmanlikAlanBelgesi(bot, update):
-    
-    update.message.reply_text('GTÜ Bilgisayar Mühendisliği Bölümü öğrencilerine üç alanda uzmanlaşma imkanı sunmaktadır. Öğrenciler gerekli şartları sağlarlarsa Uzmanlık Alanı Sertifikası almaya hak kazanacaklardır. [Sistem Mühendisliği, Yazılım Mühendisliği ve Bilgisayar Ağları ve Bilgi Güvenliği]')
 
 def yokAtlas(bot, update):
     
@@ -357,9 +306,7 @@ def isBulmaOranlari(bot, update):
     
     update.message.reply_text('Bu konuda yapılmış bazı anketlere göre Türkiye\'nin en iyileri arasındayız. Ilgili bağlantı http://calibre.kyyd.org.tr/EniyiUniversiteler.aspx')
 
-def hocalarimizAyriliyormu(bot, update):
-    
-    update.message.reply_text('Hayır değil. Son 4 yıldır ayrılan bir hocamız olmadı hatta yeni hocalar aramıza katıldı.')
+
 
 def error(bot, update, error):
     """Log Errors caused by Updates."""
@@ -379,10 +326,10 @@ def kampusFotolari(bot,update):
 
 def hangiBolumuSecmeliyim(bot,update):
 
-    update.message.reply_text("Bu soru bana çok soruluyor ve cevaplaması gerçekten çok zor. İyi bir eğitim almış bilgisayar mühendisinin hem Türkiye'de hem de yurt dışında iyi iş bulacağı herkes tarafından kabul ediliyor. Bu konuda yapılan istatistikler hep bu yönde. \
-        \nFakat bu herkes bilgisayar mühendisi olmalıdır manasına gelmiyor tabi ki, eğer yetenekleriniz ve planlarınınız XXXX mühendisliği yönünde ise tabi ki XXXX mühendisi olun derim. Ancak kararınız bilinçli olmalı, iyi bir araştırmaya dayalı olmalı. Üniversite tercih aşamasında bu türlü bir kararı vermek hiç te kolay değil, bunu herkes biliyor. O nedenle bu ikilemde kalan adaylara şunu öneriyorum. Eğer bilgisayar mühendisliği ve XXXX mühendisliği arasında ikilemdeyseniz, GTÜ Bilgisayar Mühendisliği bölümünü tercih edin. \
-        \nİlk yıl okuyun, size çok iyi temel mühendislik ve programlama dersleri vereceğiz. Bu arada bir bilgisayar mühendisinin ne yaptığını yavaş yavaş anlamış olacaksınız. Eğer yıl sonunda hala XXXX mühendisi olmak istiyorsanız, o zaman hemen dilekçenizi vererek merkezi yatay geçiş (http://www.yok.gov.tr/documents/7701936/7719456/yataygeci%C5%9Fpdf.pdf/) kontenjanlarından Türkiye'de istediğiniz üniversiteye yatay geçiş yapabilirsiniz, tabi ki tercih yaptığınız dönemde o bölüme YKS puanınızın yetmesi gerekiyor. \
-        \nBu şekilde eğer bilgisayar mühendisi olmak isterseniz bir kaybınız olmaz, eğer XXXX olmak isterseniz, temel bilim dersleriniz yeni bölümünüzde saydırırsınız, yıl kaybınız olmaz ve sağlam C programlama ve temel bilgisayar bilginiz olur. Bu bilgiler her türlü mühendislik için gereklidir. \
+    update.message.reply_text("Bu soru bana çok soruluyor ve cevaplaması gerçekten çok zor. İyi bir eğitim almış malzeme mühendisinin hem Türkiye'de hem de yurt dışında iyi iş bulacağı herkes tarafından kabul ediliyor. Bu konuda yapılan istatistikler hep bu yönde. \
+        \nFakat bu herkes malzeme mühendisi olmalıdır manasına gelmiyor tabi ki, eğer yetenekleriniz ve planlarınınız XXXX mühendisliği yönünde ise tabi ki XXXX mühendisi olun derim. Ancak kararınız bilinçli olmalı, iyi bir araştırmaya dayalı olmalı. Üniversite tercih aşamasında bu türlü bir kararı vermek hiç te kolay değil, bunu herkes biliyor. O nedenle bu ikilemde kalan adaylara şunu öneriyorum. Eğer malzeme mühendisliği ve XXXX mühendisliği arasında ikilemdeyseniz, GTÜ Malzeme Mühendisliği bölümünü tercih edin. \
+        \nİlk yıl okuyun, size çok iyi temel mühendislik ve alan dersi vereceğiz. Bu arada bir malzeme mühendisinin ne yaptığını yavaş yavaş anlamış olacaksınız. Eğer yıl sonunda hala XXXX mühendisi olmak istiyorsanız, o zaman hemen dilekçenizi vererek merkezi yatay geçiş (http://www.yok.gov.tr/documents/7701936/7719456/yataygeci%C5%9Fpdf.pdf/) kontenjanlarından Türkiye'de istediğiniz üniversiteye yatay geçiş yapabilirsiniz, tabi ki tercih yaptığınız dönemde o bölüme YKS puanınızın yetmesi gerekiyor. \
+        \nBu şekilde eğer bilgisayar mühendisi olmak isterseniz bir kaybınız olmaz, eğer XXXX olmak isterseniz, temel bilim dersleriniz yeni bölümünüzde saydırırsınız, yıl kaybınız olmaz. \
         \nMerkezi yatay geçiş için herhangi bir sınırlama yok (ortalama, not ve devam durumu, sınıf, kontenjan, fakülte farkı vb.) Sadece söylediğim gibi tercih yaptığınız dönemde o bölüme YKS puanınızın yetmesi gerekiyor. Bölümüze her sene çok sayıda merkezi yatay geçiş öğrencisi geliyor ve aynı zamanda çok sayıda öğrenci de ayrılıyor. Merkezi yatay geçiş bence YÖK'ün son yıllarda devreye aldığı en güzel uygulama. Başlangıçta yapılan tercih yanlışlıklarının büyük kısmını gideriyor.")
 
 
