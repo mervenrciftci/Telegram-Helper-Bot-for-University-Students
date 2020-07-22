@@ -96,7 +96,7 @@ def main():
 def start(bot, update):
     update.message.reply_text(
         "Gebze Teknik Universitesi Malzeme Muhendisligi Botuna Hos Geldiniz.\
-        \n /NedenGtu - Neden GTU Secmeliyim?\
+        \n /NedenGtu - Neden GTU Malzeme Mühendisliği Secmeliyim?\
         \n /MuhendisNedir - Mühendis Nedir?\
         \n /MalzemeMuhendisi - Malzeme Mühendisi Nedir?\
         \n /KimlerMMOlabilir - Kimler Malzeme Mühendisi Olabilir?\
@@ -127,7 +127,7 @@ def start(bot, update):
         \n /KampusFotolari - Kampüsümüzden görüntüler\
         \n /HangiBolumuSecmeliyim - Malzeme Mühendisliğini mi seçmeliyim, XXXX Mühendisliğini mi seçmeliyim??\
         \n /Siralama - sıralama ile ilgili tahmin aralığı\
-        \n /KacYildaMezun - Malzeme Mühendisliğinden mezun olma\
+        \n /KacYildaMezun - Malzeme Mühendisliğinden mezun olma süresi\
         \n /GrupKurallari - Grubumuzun ufak kuralları \
         \n Adayları Bilgilendirme Grubu - https://t.me/GtuMalzemeMuhBot")
  
@@ -147,7 +147,7 @@ def welcome(bot, update):
 
 def nedenGtu(bot, update):
     
-    update.message.reply_text('GTU konumu itibari ile GOSB, TÜBİTAK Serbest Bölge, KOSGEB ve benzeri bir çok AR-GE Merkezi alanında bulunmaktadır. Bu durum staj, mezuniyet öncesi ve sonrası iş olanakları sağlamaktadır. İstanbul’a yakın olması nedeniyle İstanbul’da ikamet etme ve çalışma olanağı sağlamaktadır. Öğrencilere yaptırılan projelerle sadece teorik bilgide kalmayan bunun yanında saha tecrübesi kazandıran bir eğitim verilmektedir. Bölümümüzdeki öğretim üyelerimiz kendi alanlarında yurtdışında saygın üniversitelerde doktora eğitimlerini tamamlamış ve önemli akademik başarılar edinmiştir. Aldıkları iyi eğitimi öğrencilere tüm çabalarıyla aktaran akademisyenlerimiz bir yandan da birçok ulusal ve uluslararası proje yürütmekte, bilimsel makalelerini yayınlamaktadır. Gebze Teknik Üniversitesinin Türkiye’nin en büyük sanayi bölgelerinden birinde bulunması ve sanayi kuruluşları ile birçok iş birliğine sahip olması özellikle mühendislik öğrencileri için gerek staj imkanları gerek üniversite sonrası iş hayatı için büyük bir avantajdır.')
+    update.message.reply_text('GTU konumu itibari ile GOSB, TÜBİTAK Serbest Bölge, KOSGEB ve benzeri bir çok AR-GE Merkezi alanında bulunmaktadır. Bu durum staj, mezuniyet öncesi ve sonrası iş olanakları sağlamaktadır. İstanbul’a yakın olması nedeniyle İstanbul’da ikamet etme ve çalışma olanağı sağlamaktadır. Öğrencilere yaptırılan projelerle sadece teorik bilgide kalmayan bunun yanında saha tecrübesi kazandıran bir eğitim verilmektedir. Bölümümüzdeki öğretim üyelerimiz kendi alanlarında yurtdışında saygın üniversitelerde doktora eğitimlerini tamamlamış ve önemli akademik başarılar edinmiştir. Aldıkları iyi eğitimi öğrencilere tüm çabalarıyla aktaran akademisyenlerimiz bir yandan da birçok ulusal ve uluslararası proje yürütmekte, bilimsel makalelerini yayınlamaktadır. Gebze Teknik Üniversitesinin Türkiye’nin en büyük sanayi bölgelerinden birinde bulunması ve sanayi kuruluşları ile birçok iş birliğine sahip olması özellikle mühendislik öğrencileri için gerek staj imkanları gerek üniversite sonrası iş hayatı için büyük bir avantajdır. Bölümümüzdeki öğretim üyelerimiz kendi alanlarında yurtdışında saygın üniversitelerde doktora eğitimlerini tamamlamış ve önemli akademik başarılar edinmiştir. Aldıkları iyi eğitimi öğrencilere tüm çabalarıyla aktaran akademisyenlerimiz bir yandan da birçok ulusal ve uluslararası proje yürütmekte, bilimsel makalelerini yayınlamaktadır. Gebze Teknik Üniversitesinin Türkiye’nin en büyük sanayi bölgelerinden birinde bulunması ve sanayi kuruluşları ile birçok iş birliğine sahip olması özellikle mühendislik öğrencileri için gerek staj imkanları gerek üniversite sonrası iş hayatı için büyük bir avantajdır.')
 
 def Siralama(bot, update):
     
@@ -249,7 +249,7 @@ def erasmus(bot, update):
     update.message.reply_text('Üniversitemiz Erasmus öğrenim hareketliliği programına dahildir ve en az 3 ay en fazla 12 ay olacak şekilde öğrencilere yurt dışı deneyimi, çok kültürlü ortamda ders işleme, değişik kültürleri tanıma, Türk kültürünü tanıtma, yeni arkadaşlar edinme, farklı bir okulda öğrenci olabilme ve farklı bir sistem görebilme olanakları kazandırır. GTU Bilgisayar Mühendisliği Fransa, İspanya, Almanya, Belçika, Polonya gibi bir çok farklı ülkedeki üniversitelere bu program ile öğrenciler göndermektedir.\
             Erasmus değişim programı olduğu için bölümün ile ilgili ders alıp 1 dönem veya 2 dönem farklı bir ülkede ve okulda eğitim görme fırsatı buluyorsun. Ülkede kaldığın süre zarfında gittiğin okulun eğitiminin yaninda geziyorsun farkı kültür görüyorsun, o ülkenin dilini ve kulturunu kendine katiyorsun ve büyük tecrübeler edinmiş oluyorsun. \
                     Dil konusunda gideceğin okula göre değişen bir durum oluyor bu. Bazı okullar kendi bulundukları ülkenin dilinde belirli bir seviyede olmanı isteyebiliyorlar ama bazı okullar için eğitim dilleri %100 ingilizce olduğundan dolayı sadece İngilizce yeterli olabiliyor. Benim gideceğim okulda Fransızca zorunluluğu yok mesela ben de bilmiyorum. Bu sayede hem Fransızca öğrenip kendimi geliştireceğim hem de İngilizcemi üst kademeye taşımış olacağım.\
-Bunun yanında Erasmus stajı denen bir ayrı durum daha var burada da belirli bir süreliğine farklı bir ülkede stajini yapıyorsun. Bu programların hepsi devlet destekli oluyor. Gittiğin ülkeye göre ve erasmus için gireceğin sıralamana göre belirli bir miktar aylık hesaplama ile hibe aliyorsun. Genelde bizim okulda hibe almayan öğrenci kalmıyor.')
+Bunun yanında Erasmus stajı denen bir ayrı durum daha var burada da belirli bir süreliğine farklı bir ülkede stajini yapıyorsun. Bu programların hepsi devlet destekli oluyor. Gittiğin ülkeye göre ve erasmus için gireceğin sıralamana göre belirli bir miktar aylık hesaplama ile hibe aliyorsun. Genelde bizim okulda hibe almayan öğrenci kalmıyor. Bölümümüzün anlaşmalı okullar listesi için : http://www.gtu.edu.tr/kategori/1035/0/display.aspx?languageId=1 ')
 
 
 def ogrenciykenCalisma(bot, update):
@@ -259,8 +259,8 @@ def ogrenciykenCalisma(bot, update):
 def kulupler(bot, update):
     
     update.message.reply_text('Üniversite içinde ki kulüpler teknik kulüpler ve sosyal kulüpler olmak üzere iki alanda çalışmalarını sürdürmektedirler. \
-            \n Her bölümün kendine ait topluluğu bulunmakla beraber Robotik ve Otomasyon, Havacılık ve Uzay, SEDS Uzay ve Fizik , Savunma Teknolojileri, IEEE,Sosyal Yaşam ve Medya, Latin Dans Topluluğu, Fotoğrafçılık ve Kısa Film, Siber Güvenlik,MITA gibi kulüpler ile üyelerine ders dışı vakitlerini değerlendirme olanağı sağlamaktadır.\
-            \n Kulüplerin kendi içlerinde oluşturduğu topluluklar sayesinde uluslarası yarışmalara katılım ve uluslararası TEKNOFEST,TUBITAK yarışmalarına katılım sağlanmaktadır. \
+            \n Her bölümün kendine ait topluluğu bulunmakla beraber Robotik ve Otomasyon, Havacılık ve Uzay, SEDS Uzay ve Fizik , Savunma Teknolojileri, IEEE,Sosyal Yaşam ve Medya, Latin Dans Topluluğu, Fotoğrafçılık ve Kısa Film, Siber Güvenlik,Malzeme Mühendisliği Kulübü gibi kulüpler ile üyelerine ders dışı vakitlerini değerlendirme olanağı sağlamaktadır.\
+            \n Kulüplerin kendi içlerinde oluşturduğu topluluklar sayesinde uluslarası yarışmalara katılım ve uluslararası TEKNOFEST,TUBITAK yarışmalarına katılım sağlanmaktadır. Aynı zamanda çeşitli seminer ve etkinlikler düzenlemektedirler. \
             \n Havacılık ve Uzay kulübü  ve Robotik kulüpleri içerisinde oluşan Model Uydu Takımları 2018 yılından beri NASA dahil olmak üzere Amerikan ve Avrupa yarışlarına katılmaktadır. Havacılık kulübünün IHA , Model Uçak takımları 2013 yılından beri çeşitli yarışmalarda sayısız ödül kazanmıştır.  Robotik otomasyon kulübü her sene değişik alanlarda eğitimler düzenlemek ve nisan aylarında geleneksel Robot olimpiyatları düzenlemektedir. Okul içerisinde GTU Roket kulübü adlı model roketçilik kulübü bulunmakta ve Türkiye Tayyare Derneği tarafından desteklenmektedir. Otonom Araç geliştirmek üzerine kurulan GTU HAZINE OTONOM araç takımı ise birebir boyut otonom araç tasarlamak ve bu konular üzerine çalışmaktadır. IEEE olarak sosyal yardımlaşma amaçlı robotlar tasarlanmaktadır. Ayrıca bu etkinlikler yanı sıra haftalık latin dans geceleri ve fotoğrafçılık gezileri olmaktadır. ')
 
 def basarilar(bot, update):
@@ -286,7 +286,7 @@ def Akreditasyon(bot, update):
 
 def YatayGecis(bot, update):
     
-    update.message.reply_text('Merhabalar ben yatay geçiş süreciyle yerleşen bir arkadaşım , merkezi yerleştirme puanı ile yatay geçiş yapacaklar için yaşadığım süreçten ve Gtü bilgisayarı neden tercih ettiğimden kısaca bahsedeceğim. Benim zamanımda Lys ve Ygs olduğu için puan türü farklı olabilir ancak MF-4 ile geçiş yapmıştım, okulun açtığı kontenjan kadar kişi puan sıralaması doğrultusunda kabul ediliyor. Benimle beraber 2015 senesinde 3 kişi daha geçiş yapmıştı yani kontenjan 4 diye düşünüyorum. Hazırlık okuma durumu-Eğer okulunuzdan geçerli bir yabancı dil belgeniz var ise yani daha önce hazırlık okuyup başarı ile geçtiyseniz burada hazırlık okumanıza gerek kalmıyor. Ancak Türkçe bir bölümden geçiyorsanız, maalesef GTÜ’de hazırlık sınavını geçmelisiniz. Ders saydırma - Okulunuzun size verdiği havuz derslerinin(Mat,Fizik,Türkçe vb.) CC ve daha üstü olanlarını geçiş yaptığınızda saydırabilirsiniz.\
+    update.message.reply_text('Merhabalar ben yatay geçiş süreciyle yerleşen bir arkadaşım , merkezi yerleştirme puanı ile yatay geçiş yapacaklar için yaşadığım süreçten ve Gtü malzemeyi neden tercih ettiğimden kısaca bahsedeceğim. Benim zamanımda Lys ve Ygs olduğu için puan türü farklı olabilir ancak MF-4 ile geçiş yapmıştım, okulun açtığı kontenjan kadar kişi puan sıralaması doğrultusunda kabul ediliyor. Benimle beraber 2015 senesinde 3 kişi daha geçiş yapmıştı yani kontenjan 4 diye düşünüyorum. Hazırlık okuma durumu-Eğer okulunuzdan geçerli bir yabancı dil belgeniz var ise yani daha önce hazırlık okuyup başarı ile geçtiyseniz burada hazırlık okumanıza gerek kalmıyor. Ancak Türkçe bir bölümden geçiyorsanız, maalesef GTÜ’de hazırlık sınavını geçmelisiniz. Ders saydırma - Okulunuzun size verdiği havuz derslerinin(Mat,Fizik,Türkçe vb.) CC ve daha üstü olanlarını geçiş yaptığınızda saydırabilirsiniz.\
     \n Yatay geçiş yaparken istenen belgeler içerisinde, önceki okulunuzdan başarı ile geçtiğiniz derslerin dökümünü çıkartmanız istenmektedir. Bölüm dersleri için ise tavsiyem, tamamını GTÜ’den almanızdır. İki üniversite görmüş biri olarak söylemeliyim ki, ders içerikleri ve niteliği çok farklı oluyor. Neden GTÜ bilgisayar -Eğitiminiz sadece derste kalmıyor, verilen ödevler ve projeler ile hem derste işlenen konu pekişmiş oluyor hem de sizi iş hayatının yoğunluğuna hazırlanmış oluyorsunuz. Belki okul eğitiminde ağırlıklı olarak console eğitimi verilse de, öğrencilerin çoğu yaz tatillerinde ya da mezun olduktan sonra web, mobil gibi popüler alanlara kolaylıkla kayabilecek yeterlilikte ve özgüvende oluyorlar.\
     \n Ayrıca öğrenciler çok rahat bir biçimde 3. ve 4. sınıfta okurken çalışabilecekleri gibi, mezun olur olmaz rahatlıkla iş bulabiliyorlar. Kötü yanları peki? -Gerçekten vaktinizin çoğunu okul alacak, bunu göze almalısınız. Ben çok hafta biliyorum, 4 ödev teslim ettiğim oldu bu da neredeyse hiçbir günün bana kalmaması anlamına geliyordu. Ayrıca okulun Gebze’de olması da bir dezavantaj olarak görülebilir ancak şanslısınız ki Marmaray açıldı :) . Nasıl Girebiliriz - \
     \n Arkadaşlar yatay geçiş her üniversiteden yapılabilir fakat 2 çeşit yatay geçiş var biri önceki seneler puanı tuttuğu halde yazmayıp sonradan geçmeyi düşünenler için(merkezi yatay geçiş) diğeri ortalama ile yatay geçiş bunun içinde belli bir ortalamanın üstünde olup başvuruyorsunuz tabi başka kriterlere de bakılabilir o dönem başvuranlar arasında listeye alınıyorsunuz eğer şartları(yaptığınız GNO,girdiğiniz sene ki sınav puanı gibi katmanların belli katsayılarla çarpılıp size puan çıkarılması) sağlarsanız ve kontenjana girerseniz geçebilirsiniz . Tüm üniversitelerde böyle bu olay , ders denklik olayı ayrı bir olay tabi')
@@ -302,7 +302,7 @@ def girisimciDestekleri(bot, update):
 
 def isBulmaOranlari(bot, update):
     
-    update.message.reply_text('Bu konuda yapılmış bazı anketlere göre Türkiye\'nin en iyileri arasındayız. Ilgili bağlantı http://calibre.kyyd.org.tr/EniyiUniversiteler.aspx')
+    update.message.reply_text('Gebze Teknik Üniversitesi Malzeme Bilimi ve Mühendisliği Bölümü mezunlarımızın, mezun olduktan sonraki ilk 1 sene içerisinde istihdam edilme oranı %75 tir.Bu konuda yapılmış bazı anketlere göre Türkiye\'nin en iyileri arasındayız. Ilgili bağlantı http://calibre.kyyd.org.tr/EniyiUniversiteler.aspx')
 
 
 
