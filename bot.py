@@ -282,9 +282,7 @@ def egitimDili(bot, update):
 
 def Akreditasyon(bot, update):
     
-    update.message.reply_text('Akreditasyon alınmak üzereyken yüzde otuzdan yüzde yüz ingilizce eğitime  geçildiği için \
-            Akreditasyon MÜDEK alacaktık vazgeçtik anlamlı olmadığına karar verdik şimdi ABET alınacak, ancak bunlar bizim gibi bölümler için sadece ekstra bir etiketten öteye gitmiyor. Ama işte bazı velileri tatmin ediyor.\
-        Siz mezun olduğunuzda zaten birkaç yıllık ABET akreditasyonumuz olmuş olacaktır.')
+    update.message.reply_text('Akreditasyon çalışmaları başlamış bulunmaktadır. Önümüzdeki birkaç sene içerisinde ABET akreditasyonu alınması planlanmaktadır.')
 
 def YatayGecis(bot, update):
     
